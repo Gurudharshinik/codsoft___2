@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="C:/Users/gurud/OneDrive/Desktop/portfolio/portfolio_style.css">
+        
+
+    </head>
+    <style>
+        body{
+            background-color: black;
+            transition: transform 0.3s, background-color 0.3s, box-shadow 0.2s;
+        }
+        ul{
+            list-style-type:none;
+            margin:0px;
+            padding:0px;
+            display:block;
+            background-color: black;
+            overflow:hidden;
+        }
+        li{
+            float:right;
+            margin:0px;
+        }
+        li a{
+            color:white;
+            display:block;
+            padding:14px 20px;
+            text-decoration:none;
+            transition: background-color 0.3s, font-size 0.3s;
+            font-family: 'Times New Roman', Times, serif;
+            font-size:x-large;
+        }
+        .container{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            margin-bottom:0 px;
+           
+        }
+        li a:hover{
+            transform: scale(1.2);
+        } 
+        .image{
+            flex:1;
+            margin-right:50px;
+            margin-top: 0px;
+        } 
+        .text{
+            flex:2;
+            color:white;
+            margin-left: 50px;
+            margin-top:10px;
+            line-height: 1.5;
+        }
+        img{
+           max-width:800px;
+           height:800px;
+        }
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+            margin: 8px 2px;
+            border-radius: 50%;
+            height:30px;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-instagram {
+            background-image: linear-gradient(45deg, #F40968,#F5B553,#512E5E);
+            color: white;
+        }  
+        button{
+            background-color: #512E5E;
+            color: aliceblue;
+            border-radius: 10px;
+            border: 1px solid #111;
+            padding: 14px 25px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left:2px;
+            margin-right: 20px;
+        }
+        button:hover {
+            transform: scale(1.1);
+            opacity: 0.7;
+            box-shadow: 0 0 10px #000;
+        }
+        .fa-brands{
+            padding: 20px;
+            font-size: 50px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+            margin: 8px 2px;
+            border-radius: 50%;
+            height:30px;
+        }        
+        .fa-aws{
+            background-color: #000;
+            color: #007bb5;
+            
+        }
+        .fa-node-js{
+            background-color: #000;
+            color: #007bb5;
+        }
+        .fa-html5{
+            background-color: #000;
+            color: #007bb5;
+        }
+        .fa-css3-alt{
+            background-color: #000;
+            color: #007bb5;
+
+        }
+        .fa-python{
+            background-color: #000;
+            color: #007bb5;
+
+        }
+        .fa-react{
+            background-color: #000;
+            color: #007bb5;
+
+        }
+        .fa-js{
+            background-color: #000;
+            color: #007bb5;
+
+        }
+        .project{
+            height:150px;
+            margin:25px;
+            width:700px;
+            background-image: linear-gradient(45deg,white, #55ACEE );
+            margin-left:35px;
+            margin-right:35px;
+            border-radius: 5px;
+            box-shadow: 10px 30px 15px rgba(0, 0, 0, 0.5);
+        }
+        .project:hover{
+            transform: scale(1.1);
+        }
+        .project p{
+            margin:30px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+        .fa-map-marker{
+            background-color:black;
+            color: white;
+        }
+        .skill{
+            width:600px;
+            background-color: aliceblue;
+            height:20px;
+            float:left;
+            border-radius: 15px;
+           
+        } 
+        .html{
+            width:90%;
+            background-color: #512E5E;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius:0px;
+
+        }  
+        .node{
+            width:50%;
+            background-color: #512E5E;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius:0px;
+
+        }
+        .prog{
+            width:60%;
+            background-color: #512E5E;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius:0px;
+
+        }
+        .prof img{
+            width:350px;
+            height:350px;
+            margin-right:120px;
+            border-radius: 50%;
+            box-shadow: 10px 30px 15px rgba(255, 255, 255, 0.5);
+        }
+        .fa-regular{
+            text-decoration:none;
+        }
+        .fa-hand{
+            color:rgba(232, 211, 211, 0.5);
+        }
+              
+          
+    </style>
+    <body>
+        <ul>
+            <li style="float:left;margin-left:10px;margin-top:10px;color:white;font-size:25px;">ɭ๏๏к ק๏гՇ๏</li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="">Certification</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Achievements</a></li>
+        </ul>
+        <div class="container">
+            <div class="text">
+                <h1 style="font-size:60px;">Hello all <a href="" class="fa-regular fa-hand"></a> I'm Gurudharshini</h1>
+                <p style="font-size: 35px;">An ambitious student aspiring to be a web developer and quite passionate about learning new skills.I Love taking challenges posed by learning new stuffs</p>
+                <h3>
+                    <a href="#" class="fa fa-facebook"style="margin:10px;"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a></h3> 
+                <button><b>CONTACT ME</b></button>   
+                <button><b>GET INTO RESUME</b></button>   
+
+            </div>
+            <div class="image">
+                <img src="https://i.pinimg.com/736x/50/ea/76/50ea767665406e6f47f51d69967918ee.jpg">
+            </div>
+            
+        </div>
+        <div class="container" >
+            
+            <div class="image">
+                <img src="https://img.freepik.com/premium-vector/word-cloud-background-concept-expertise-business-success-performance-expensive-skill-competence-career-achievement-vector-illustration_616200-4061.jpg" width="700px" height="500px">
+            </div>
+            <div class="text">
+                <h1 style="font-size:50px;">What I do</h1>
+                <p style="font-size: 25px;">I am currently pursuing my studies, where I have developed a strong foundation in web development , cloud computing , 
+                    foundations of artificial intelligence and problem solving.</p>
+                <h3><a href="#" class="fa-brands fa-aws"></a>
+                <a href="" class="fa-brands fa-node-js"></a>
+                <a href="" class="fa-brands fa-html5"></a>
+                <a href="" class="fa-brands fa-css3-alt"></a>
+                <a href="" class="fa-brands fa-python"></a>
+                <a href="" class="fa-brands fa-react"></a>
+                <a href="" class="fa-brands fa-js"></a></h3>
+                <p style="font-size: 25px;" > Currently, I'm actively invloved in 
+                    Codsoft project,Infosys training programme and curious to learn more in the upcoming days through new courses</p>
+                
+            </div>
+            
+        </div>
+        <h1 style="font-size:50px;color: aliceblue;">Achievements and Certifications</h1> 
+        <div class="card-container">
+            
+            <div class="card">
+                <img src="https://img-c.udemycdn.com/course/480x270/5597584_3d08_3.jpg">
+                <div class="card-content">
+                    <p>Cloud Practioner</p>
+                    <p style="font-size: 15px;">Explored the limits of Cloud computing through AWS Certification course which provided 
+                    deep insights into creation and exploitation of safe and efficient cloud data.</p>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=612x612&w=0&k=20&c=GkAOxzduJbUKpS2-LX_l6jSKtyhdKlnPMo2ito4xpR4=">
+                <div class="card-content">
+                    <p>Artificial Intelligence</p>
+                    <p style="font-size: 15px;">My interests in AI and its working had been fueled by Infosys'(course name) where I 
+                    realised the elemental mechanisms behind AI</p>
+                    
+
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="https://www.trentonsystems.com/hubfs/Deep_Learning.jpeg">
+                <div class="card-content">
+                    <p>Deep learning</p>
+                    <p style="font-size: 15px;">The vanted Deep learning concepts had been learnt by me through Infosys' (course name) which really built the core about 
+                        Neural networks and the underlying breakthroughs</p>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="https://www.intlock.com/wp-content/uploads/2023/07/Thumbnail_2-scaled-1.jpg">
+                <div class="card-content">
+                    <p>Natural Language processing</p>
+                    <p style="font-size: 15px;">I pursued a course offered by Infosys' that shed light upon Natural Language Processing. 
+                        It gave me information about the achievements and challenges of the NLP</p>
+
+                </div>
+
+            </div>
+
+        </div>
+        <h1 style="font-size:50px;color: aliceblue;">Skill</h1>
+        
+        <div class="container">
+            <div class="image">
+                <p style="color: aliceblue;font-size: 20px;">Front End/Design</p>
+                <div class="skill">
+                <div class="skill html"></div>
+                </div>
+                <br>
+                <p style="color: aliceblue;font-size: 20px;">Back End/Design</p>
+                <div class="skill">
+                <div class="skill node"></div>
+                </div>
+                <br>
+                
+                    <p style="color: aliceblue;font-size: 20px;">Programming</p>
+                    <div class="skill">
+                    <div class="skill prog"></div>
+                    </div>
+            </div>
+            <div class="prof">
+                <img src="https://kinsta.com/wp-content/uploads/2021/11/learn-html.png" >
+            </div>
+        </div>
+        
+
+
+        
+        <h1 style="font-size:50px;color: aliceblue;">Open Source Projects</h1> 
+        <div class="container" style="background-color: aliceblue;margin-left: 50px;margin-right:60px">
+            <div class="project">
+                <p>A dynamic and interactive music website that allows users to explore, listen to, and share their favorite tracks and playlists. 
+                    The site features a sleek design, user-friendly interface, and seamless navigation, creating an immersive experience for music enthusiasts.</p>
+
+            </div>
+            <div class="project">
+                <p>A comprehensive cybercrime portal designed to educate and inform users about various types of cybercrimes, prevention strategies, and reporting mechanisms. 
+                    This portal aims to raise awareness and provide resources to help users protect themselves online.</p>
+
+            </div>
+            
+            
+        </div>
+        <div class="container" style="background-color: aliceblue;margin-left: 50px;margin-right:60px">
+            <div class="project">
+                <p>A modern and visually appealing landing page designed to capture the attention of visitors and convert them into potential customers or subscribers. 
+                    The landing page is optimized for high conversion rates with clear calls to action and engaging content.</p>
+
+            </div>
+            <div class="project">
+                <p>A professional and stylish portfolio website to showcase your skills, projects, and experience.
+                     This site serves as a personal brand statement and helps potential employers or clients get to know you better.</p>
+
+            </div>
+            
+            
+        </div>
+        <h1 style="color: aliceblue;font-size:35px ;">Reach Out To Me</h3>
+        <div class="container">    
+            <div >
+                <p style="color:aliceblue;font-size:20px;font-family:'Times New Roman', Times, serif">DISCUSS ABOUT SOMETHING OR JUST WANT TO SAY HI MY INBOX IS OPEN TO ALL </p>
+                <p style="font-family: 'Times New Roman', Times, serif;color:white;margin:0px;"><a href="#" class="fa fa-map-marker" ></a>4th avenue,oaknut-field,625667</p>
+                <p style="color:aliceblue;font-size:20px;font-family:'Times New Roman', Times, serif">Open for Oppurtunities: Yes</p>
+                <a href="#" class="fa fa-facebook"style="margin:10px;"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+
+            </div>
+            <div>
+                <img style="border-radius:50%;width:150px;height:150px;object-fit:cover;border:7px solid #512E5E;margin-right:50px;" src="https://i.pinimg.com/736x/c6/4c/b1/c64cb1f38257848f4acc9035ed41f7eb.jpg" >
+
+            </div>
+        </div>
+        
+    </body>
+</html>
